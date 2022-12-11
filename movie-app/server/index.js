@@ -64,7 +64,7 @@ app.get("/api/get", (req, res)=>{
     if(filter == ''){
         filter = 'title'
     }
-  
+
     const search = lc_search?.split(' ').map(capitalize).join(' ');
     console.log(filter)
     console.log(search)
@@ -72,6 +72,7 @@ app.get("/api/get", (req, res)=>{
     const sqlSelect = queryFilter(filter,search);
     db.query(sqlSelect, (err,result) =>{
         res.send(result);
+        console.log(res)
     })
     console.log(sqlSelect)
     

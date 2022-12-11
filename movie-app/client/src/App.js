@@ -1,7 +1,7 @@
-import React, {Component, useEffect, useState } from 'react';
+import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {BrowserRouter as Router, Routes, Switch, Route} from "react-router-dom"
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 import MoviePage from './Pages/MoviePage';
 import Home from './Pages/Home';
 

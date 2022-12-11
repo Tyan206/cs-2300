@@ -6,7 +6,6 @@ import SearchBox from './components/SearchBox';
 import MovieFilter from './components/MovieFilter';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Axios from 'axios'
-import {BrowserRouter as Router, Routes, Switch, Route} from "react-router-dom"
 
 const Home = () => {
     
@@ -85,10 +84,6 @@ const Home = () => {
     </div>
 
     </div>
-
-   
-    
-  
   );
 };
 

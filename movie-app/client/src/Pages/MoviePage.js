@@ -5,7 +5,7 @@ import ReactPlayer from 'react-player'
 import Axios from 'axios'
 
 import './MoviePage.css'
-import Utils from './utilsService'
+
 
 
 const MoviePage = () => {

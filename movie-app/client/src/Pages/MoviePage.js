@@ -1,4 +1,4 @@
-import React, {Component, useEffect, useState,Linking } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import {Row,Col, Tag} from 'antd'
 import ReactPlayer from 'react-player'
@@ -101,11 +101,12 @@ let info = {
       </button>
       <Row>
         <Col span={8} >
+          
           <img alt='movie' width='100%' src={info.T_poster} class="img-fluid"></img>
         </Col>
 
         <Col span={12} offset={1}>
-          <h1>{info.name}</h1>
+        <strong className="name">{info.T_name}</strong>
           <hr />
           <strong> Description: </strong>
           <p>{info.T_story}</p>

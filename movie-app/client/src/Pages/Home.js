@@ -54,6 +54,10 @@ const Home = () => {
       <MovieFilter FilterValue={FilterValue} setFilter={setFilter}/>
     </div>
 
+    <hr />
+    <strong>
+      Search Lists
+    </strong>
     <div className='row'>
       <MovieList movies={movies}/>
     </div>

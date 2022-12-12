@@ -39,6 +39,9 @@ img {
   .no-borderRadiusImportant {
     border-radius: 0px !important;
   }
+  .name{
+    font-size: 50px;
+  }
 
   .homepage{
     background-color: #212529;

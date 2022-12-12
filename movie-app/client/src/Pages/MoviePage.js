@@ -108,48 +108,48 @@ let info = {
         <Col span={12} offset={1}>
         <strong className="name">{info.T_name}</strong>
           <hr />
-          <strong> Description: </strong>
-          <p>{info.T_story}</p>
+          <strong className="strong"> Description: </strong>
+          <p className="detail">{info.T_story}</p>
           <hr />
           <div className='genre'>
             <span className='genreTitle'>
-              <strong>Genres: </strong>
+              <strong className="strong">Genres: </strong>
             </span>
-            {genres.map(genre => <Tag color={'darkslategray'} key={genre.G_name}>{genre.G_name}</Tag>)}
+            {genres.map(genre => <Tag color={'darkslategray'} key={genre.G_name} className="detail">{genre.G_name}</Tag>)}
           </div>
           <hr />
           <div className='actor'>
             <span className='actorTitle'>
-              <strong>Actors: </strong>
+              <strong className="strong">Actors: </strong>
             </span>
-            {actors.map(actor => <Tag color={'darkolivegreen'}  key={actor.name}>{actor.name}({actor.A_role})</Tag>)}
+            {actors.map(actor => <Tag color={'darkolivegreen'}  key={actor.name}className="detail">{actor.name}({actor.A_role})</Tag>)}
           </div>
           <hr />
           <div className='director'>
             <span className='directorTitle'>
-              <strong>Director: </strong>
+              <strong className="strong">Director: </strong>
             </span>
-            {directors.map(director => <Tag color={'midnightblue'}  key={director.name}>{director.name}</Tag>)}
+            {directors.map(director => <Tag color={'midnightblue'}  key={director.name}className="detail">{director.name}</Tag>)}
           </div>
           <hr />
           <div className='writer'>
             <span className='writerTitle'>
-              <strong>Writer: </strong>
+              <strong className="strong">Writer: </strong>
             </span>
-            {writers.map(writer => <Tag color={'teal'}  key={writer.name}>{writer.name}</Tag>)}
+            {writers.map(writer => <Tag color={'teal'}  key={writer.name}className="detail">{writer.name}</Tag>)}
           </div>
           <hr />
           <div className='service'>
             <span className='serviceTitle'>
-              <strong>Service: </strong>
+              <strong className="strong">Service: </strong>
             </span>
-            {services.map(service => <button key={service.S_name} onClick={()=>{
+            {services.map(service => <button key={service.S_name} className="detail" onClick={()=>{
               window.open(service.S_url, '_blank', 'noreferrer');
             }}>{service.S_name} / {cost(service.S_price)}</button>)}
           </div>
           <hr />
           <div className='trailer'>
-            <strong> Trailer: </strong>
+            <strong className="strong"> Trailer: </strong>
           </div>
           <ReactPlayer url= {info.Y_links} controls ={true}/>
         </Col>  

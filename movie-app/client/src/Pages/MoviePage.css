@@ -54,3 +54,11 @@ img {
     align-content: center;
     width: 100%;
   }
+
+  .detail{
+    font-size: 20px;
+  }
+
+  .strong{
+    font-size:25px;
+  }
